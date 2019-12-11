@@ -6,4 +6,4 @@
 
 > A forked and edited version of https://github.com/codrops/ExpandingGridItemAnimation/
 
-> created 2019 ///
+> created 2019 ////
