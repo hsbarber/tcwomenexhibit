@@ -296,7 +296,6 @@ main {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(var(--grid-columns), 1fr);
-  overflow-x: hidden;
 }
 @media (max-width: 900px) {
   .grid {
@@ -341,6 +340,7 @@ main {
   .product__bg {
     width: 25em;
     left: 50%;
+    background: var(--details-bg-down);
     transform: translate3d(-50%, 0, 0);
   }
 }
