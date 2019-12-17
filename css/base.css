@@ -345,7 +345,7 @@ main {
 }
 @media (max-width: 600px) {
   .product__bg {
-    width: 150px;
+    width: 100%;
   }
 }
 .product__img {
