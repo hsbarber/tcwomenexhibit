@@ -6,4 +6,6 @@
 
 > A forked and edited version of https://github.com/codrops/ExpandingGridItemAnimation/
 
+> Created for Travis County Archives
+
 > created 2019 /////
