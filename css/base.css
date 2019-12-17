@@ -335,13 +335,17 @@ main {
   height: 9em;
   /* background: var(--details-bg-down); */
   position: relative;
+  width: 300px;
 }
 @media (max-width: 900px) {
   .product__bg {
-    width: 25em;
     left: 50%;
-    background: var(--details-bg-down);
     transform: translate3d(-50%, 0, 0);
+  }
+}
+@media (max-width: 600px) {
+  .product__bg {
+    width: 150px;
   }
 }
 .product__img {
