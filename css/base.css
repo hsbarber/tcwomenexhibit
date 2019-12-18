@@ -685,7 +685,6 @@ main {
     font-size: 1.5em;
   }
   .details__description {
-    /* max-width: 70%; */
     font-size: 0.85em;
     margin: 1em 0 0 0;
   }
@@ -693,9 +692,6 @@ main {
     height: 7px;
     width: 4em;
   }
-  /* .details__img {
-    right: -12vh;
-  } */
   .details__magnifier {
     right: 0;
     top: 370px;
