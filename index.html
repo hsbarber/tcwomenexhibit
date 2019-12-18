@@ -10,7 +10,6 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="pater/pater.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("This page needs to viewed in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body class="loading">
@@ -19,10 +18,6 @@
 				<title>cross</title>
 				<path d="M 5.5,2.5 C 5.372,2.5 5.244,2.549 5.146,2.646 L 2.646,5.146 C 2.451,5.341 2.451,5.659 2.646,5.854 L 8.793,12 2.646,18.15 C 2.451,18.34 2.451,18.66 2.646,18.85 L 5.146,21.35 C 5.341,21.55 5.659,21.55 5.854,21.35 L 12,15.21 18.15,21.35 C 18.24,21.45 18.37,21.5 18.5,21.5 18.63,21.5 18.76,21.45 18.85,21.35 L 21.35,18.85 C 21.55,18.66 21.55,18.34 21.35,18.15 L 15.21,12 21.35,5.854 C 21.55,5.658 21.55,5.342 21.35,5.146 L 18.85,2.646 C 18.66,2.451 18.34,2.451 18.15,2.646 L 12,8.793 5.854,2.646 C 5.756,2.549 5.628,2.5 5.5,2.5 Z"/>
 			</symbol>
-			<!-- <symbol id="icon-menu" viewBox="0 0 24 24">
-				<title>menu</title>
-				<path d="M23.8,6H0.1V3h23.7C23.8,3,23.8,6,23.8,6z M23.8,10.5H0.1v3h23.7C23.8,13.5,23.8,10.5,23.8,10.5z M24,18H10v3h14V18z"/>
-			</symbol> -->
 			<!-- Magnifier by Gregor Cresnar https://www.flaticon.com/authors/gregor-cresnar -->
 			<symbol id="icon-magnifier" viewBox="0 0 490.8 490.8">
 				<title>magnifier</title>
@@ -33,7 +28,10 @@
 
 				<header class="exhibit-header">
 					<a href="https://traviscountyhistory.org">
-						<h4>Back to Travis County Archives Home</h4>
+							<span class="back-link">
+							<img class="icon-back" src="img/left-arrow.svg" alt="back icon" />
+							<h4>Back to Travis County Archives Home</h4>
+							</span>
 					</a>
 					<h1 class="exhibit-header__title">First Women Elected Officials in Travis County</h1>
 					<span class="info"><p>
@@ -46,7 +44,6 @@
 					Listed below are the first women elected to Travis County Office. Click on the image to learn more about each official. </p></span>
 				</header>
 			</div>
-			<button class="dummy-menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
 			<div class="content">
 				<div class="grid">
 					<div class="grid__item">

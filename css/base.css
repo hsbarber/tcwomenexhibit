@@ -242,20 +242,6 @@ button:focus {
   background: #333;
 }
 
-.js .loading::after {
-  background: url(../img/electric-guitar.svg) no-repeat 50% 50%;
-  background-size: 5em;
-  pointer-events: none;
-  opacity: 0.1;
-  animation: loaderAnim 1s linear infinite alternate forwards;
-}
-
-@keyframes loaderAnim {
-  to {
-    opacity: 1;
-  }
-}
-
 .hidden {
   position: absolute;
   overflow: hidden;
@@ -272,7 +258,15 @@ button:focus {
   margin: 0 auto;
   fill: currentColor;
 }
-
+.back-link {
+  display: flex;
+  align-items: center;
+}
+.icon-back {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 1em;
+}
 main {
   position: relative;
   width: 100%;
@@ -300,7 +294,7 @@ main {
 @media (max-width: 900px) {
   .grid {
     display: block;
-    margin: 10em auto 7em;
+    margin: 6em auto 7em;
   }
 }
 .grid__item {
@@ -329,8 +323,11 @@ main {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transition: 0.3s ease-in-out;
 }
-
+.product:hover {
+  transform: scale(1.1, 1.1);
+}
 .product__bg {
   height: 9em;
   /* background: var(--details-bg-down); */
@@ -502,6 +499,11 @@ main {
     height: 200px;
   }
 }
+@media (max-width: 600px) {
+  .details__img {
+    height: 150px;
+  }
+}
 .details__bg,
 .details__img {
   transform-origin: 0 0;
@@ -639,59 +641,17 @@ main {
   }
 }
 
-/* Related demos */
-.content--related {
-  padding: 8em 5vw;
-  font-weight: bold;
-  text-align: center;
-  background: #000;
-  color: #f0f0f0;
-}
-
-.content--related a:hover {
-  color: #fff;
-}
-
-.content--related h2 {
-  font-size: 1.25em;
-}
-
-.content--related .demos {
-  padding-bottom: 3em;
-}
-
-.media-item {
-  display: inline-block;
-  padding: 1em;
-  vertical-align: top;
-  transition: color 0.3s;
-}
-
-.media-item__img {
-  max-width: 100%;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-.media-item:hover .media-item__img,
-.media-item:focus .media-item__img {
-  opacity: 1;
-}
-
-.media-item__title {
-  font-size: 1em;
-  margin: 0;
-  padding: 0.5em;
-}
 .exhibit-header {
   margin: 5em auto 7em;
   position: relative;
-  padding: 0 1em;
+  padding: 1em 4em;
   width: 100%;
   max-width: 1000px;
 }
-.exhibit-header a h4 {
-  padding-bottom: 2em;
+@media screen and (max-width: 600px) {
+  .exhibit-header {
+    padding: 1em 2em;
+  }
 }
 .exhibit-header__title {
   font-weight: bold;
@@ -741,13 +701,35 @@ main {
     top: 370px;
     left: 300px;
   }
-  .exhibit-header {
-    padding: 1em 4em;
-  }
+
   .exhibit-header__title h1 {
     text-align: center;
   }
   .dummy-menu {
     margin: 1.75em 1.5em 0 0;
+  }
+}
+/* MOBILE LANDSCAPE RESPONSIVENESS */
+@media screen and (max-height: 400px) {
+  .details__img {
+    height: 120px;
+  }
+  .details__title {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+  }
+  .details__subtitle {
+    top: 30vh;
+    left: 50%;
+    position: absolute;
+  }
+  .details__dates {
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+  }
+  .details__bg--down {
+    top: 0;
   }
 }

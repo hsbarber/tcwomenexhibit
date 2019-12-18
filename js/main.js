@@ -1,12 +1,5 @@
 /**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2017, Codrops
- * http://www.codrops.com
+ Forked: https://github.com/codrops/ExpandingGridItemAnimation/blob/master/js/main.js
  */
 {
   class Details {
@@ -91,7 +84,6 @@
       this.DOM.productImg.style.opacity = 0;
 
       const rect = this.getProductDetailsRect();
-      console.log(rect.productBgRect.left);
       this.DOM.bgDown.style.transform = `translateX(${rect.productBgRect.left -
         rect.detailsBgRect.left}px) translateY(${rect.productBgRect.top -
         rect.detailsBgRect.top}px) scaleX(${rect.productBgRect.width /
@@ -370,7 +362,6 @@
     }
     initEvents() {
       this.DOM.product.addEventListener("click", () => this.open());
-      console.log(this.DOM.product);
     }
     open() {
       DOM.details.fill(this.info);
