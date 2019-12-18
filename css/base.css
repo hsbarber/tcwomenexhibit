@@ -325,8 +325,10 @@ main {
   user-select: none;
   transition: 0.3s ease-in-out;
 }
-.product:hover {
-  transform: scale(1.1, 1.1);
+@media (min-width: 600px) {
+  .product:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 .product__bg {
   height: 9em;
@@ -581,20 +583,6 @@ main {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.dummy-menu {
-  border: 0;
-  background: none;
-  padding: 0;
-  margin: 2.75em 2.5em 0 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  font-size: 0.85em;
-  color: var(--color-close);
-  cursor: pointer;
-  z-index: 1000;
 }
 
 .details__magnifier {
